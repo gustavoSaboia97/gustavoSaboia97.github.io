@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfólio de Gustavo Saboia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Portfólio</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#project">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Bem-Vindo</h1>
+              <p class="intro-text">Gustavo Dutra Domingues Saboia</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Sobre Mim</h2>
+            <div>
+              <img style="border-radius: 50%; margin-bottom: 30px;" src="img/Eu.jpg" width="30%">
+              <p>Sou um programador, graduado em Tecnologia da Informação pela FAETERJ localizada em Petrópolis no Rio de Janeiro.</p>
+              <p>Amo tecnologia e por isso estou sempre buscando conhecimento sobre novos conceitos, novas ferramentas, a fim de ser o melhor possível.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="project" class="download-section content-section text-center">
+      <div class="container">
+          <h1 style="text-shadow: black  0.1em 0.1em 0.2em;" class="">Projetos</h1>
+        <div class="col-lg-8 mx-auto">
+            <button class="btn btn-dark btn-lg" style="float: left;" onclick="changeProject('left')"><i class="fa fa-angle-double-left animated"></i></button>
+            <button class="btn btn-dark btn-lg" style="float: right;" onclick="changeProject('right')"><i class="fa fa-angle-double-right animated"></i></button>
+          <h2 style="text-shadow: black  0.1em 0.1em 0.2em;" id="project-name"></h2>
+            
+            <div id="projetos">
+              <a id="project-link" href="#">
+                <table  style="background-color: black;">
+                  <tr>
+                    <td id="project-image" colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td>Projeto: </td>
+                    <td id="project-definition" align="center"></td>
+                  </tr>
+                  <tr>
+                    <td>Tecnologia: </td>
+                    <td id="project-tecnology" align="center"></td>
+                  </tr>
+                </table>
+              </a>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container navbar-fixed-top">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contato</h2>
+            <p style="text-decoration: none;">Telefone: (22) 99231-8796</p>
+            <p>E-mail: gustavosaboia97@hotmail.com</p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/gustavo-saboia-3a2436140" class="btn btn-default btn-lg">
+                  <i class="fa fa-linkedin fa-fw"></i>
+                  <span class="network-name">Linkedin</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/gustavoSaboia97" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/gustavo.dutradominguessaboia" class="btn btn-default btn-lg">
+                  <i class="fa fa-facebook fa-fw"></i>
+                  <span class="network-name">Facebook</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Gustavo Saboia 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
+<script>
+  var projects =[
+    {
+        "nome":"Combate Aedes",
+        "projeto":"Controle de focos do mosquito da dengue",
+        "tecnologia":"PHP com framework laravel",
+        "img":"img/CombateAedes.png",
+        "link":"https://aedes.dev.sigelu.com/"
+    }
+  ];
+
+  document.getElementById("project-image").innerHTML = "<img src='"+projects[0]['img']+"' width='100%'>";
+  document.getElementById("project-name").innerHTML = projects[0]['nome'];
+  document.getElementById("project-definition").innerHTML = projects[0]['projeto'];
+  document.getElementById("project-tecnology").innerHTML = projects[0]['tecnologia'];
+  document.getElementById("project-link").href = projects[0]["link"];
+
+var index = 0;
+
+  function changeProject(parameter){
+    
+    if (parameter == "left"){
+      if(index != 0){
+        index--;
+      }
+      else{
+        index = projects.length - 1;
+      }
+    }
+    if (parameter == "right"){
+      if(index != (projects.length - 1)){
+        index++;
+      }
+      else{
+        index = 0;
+      }
+    }
+    document.getElementById("project-image").innerHTML = "<img src='"+projects[index]['img']+"' width='100%'>";
+    document.getElementById("project-name").innerHTML = projects[index]['nome'];
+    document.getElementById("project-definition").innerHTML = projects[index]['projeto'];
+    document.getElementById("project-tecnology").innerHTML = projects[index]['tecnologia']; 
+    document.getElementById("project-link").href = projects[index]["link"];
+  }
+
+</script>
+</html>
