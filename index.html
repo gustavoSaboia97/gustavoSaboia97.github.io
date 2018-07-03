@@ -173,10 +173,17 @@
         "tecnologia":"PHP com framework laravel",
         "img":"img/CombateAedes.png",
         "link":"https://aedes.dev.sigelu.com/"
+    },
+    {
+      "nome":"MPCreator",
+      "projeto":"Separação de dados mitocondriais",
+      "tecnologia":"Python",
+      "img":"img/linux.jpg",
+      "link":"https://github.com/gustavoSaboia97/MPCreator"
     }
   ];
 
-  document.getElementById("project-image").innerHTML = "<img src='"+projects[0]['img']+"' width='100%'>";
+  document.getElementById("project-image").innerHTML = "<img src='"+projects[0]['img']+"' width='100%' height='350px'>";
   document.getElementById("project-name").innerHTML = projects[0]['nome'];
   document.getElementById("project-definition").innerHTML = projects[0]['projeto'];
   document.getElementById("project-tecnology").innerHTML = projects[0]['tecnologia'];
@@ -202,7 +209,7 @@ var index = 0;
         index = 0;
       }
     }
-    document.getElementById("project-image").innerHTML = "<img src='"+projects[index]['img']+"' width='100%'>";
+    document.getElementById("project-image").innerHTML = "<img src='"+projects[index]['img']+"' width='100%' height='350px'>";
     document.getElementById("project-name").innerHTML = projects[index]['nome'];
     document.getElementById("project-definition").innerHTML = projects[index]['projeto'];
     document.getElementById("project-tecnology").innerHTML = projects[index]['tecnologia']; 
