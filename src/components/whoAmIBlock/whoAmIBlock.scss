@@ -1,0 +1,27 @@
+.portfolio-who-am-i-block {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.picture-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -15vh;
+}
+
+.myself-pic{
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+
+.who-am-i {
+    width: 50%;
+    margin: auto;
+    font-size: 1.5vh;
+}

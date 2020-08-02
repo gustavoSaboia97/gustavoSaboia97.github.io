@@ -1,0 +1,41 @@
+.portfolio-intro-block {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.main-intro-block-text {
+    display: flex;
+    font-size: 5vh;
+    align-content: center;
+    justify-content: center;
+}
+
+.smaller-intro-block-text {
+    display: flex;
+    font-size: 2vh;
+    align-content: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.intro-block-computer-icon {
+    display: flex;
+    font-size: 5vh;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.next-page-icon {
+    display: flex;
+    font-size: 2vh;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    bottom: -25vh;
+}
+
+.next-page-icon:hover {
+    cursor: cursor;
+}

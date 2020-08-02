@@ -1,0 +1,37 @@
+.background-color-black {
+    background-color: $BLACK;
+}
+
+.background-color-gray {
+    background-color: $GRAY;
+}
+
+.background-color-white {
+    background-color: $WHITE;
+}
+
+.white-text {
+    color: $WHITE;
+}
+
+.black-text {
+    color: $BLACK;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 5vh;
+    font-weight: 700;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
