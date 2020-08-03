@@ -51,8 +51,8 @@ const getProjects = (arrowDirection) => {
 
     return (
         <a href={projects[position]['link']}>
-            <div class="project">
-                <img class="project-img" src={image} alt={projects[position]['alt']} />
+            <div className="project">
+                <img className="project-img" src={image} alt={projects[position]['alt']} />
                 <p> 
                     {projects[position]['description']}
                 </p>
@@ -66,16 +66,16 @@ let project = getProjects("initial");
 const ProjectsBlock = (props) => {
     return (
         <BlockContent id="projects-block" color="portfolio-projects-block background-color-gray">
-            <div class="title">Projects</div>
+            <div className="title">Projects</div>
             
-            <div class="projects-selector">
-                <button onClick={getProjects("back")} class="arrow-icon back-icon"><FontAwesomeIcon icon={faChevronLeft} /></button>
+            <div className="projects-selector">
+                <button onClick={() => getProjects("back")} className="arrow-icon back-icon"><FontAwesomeIcon icon={faChevronLeft} /></button>
                 
                 {
                     project
                 }
                 
-                <button onClick={getProjects("next")} class="arrow-icon next-icon"><FontAwesomeIcon icon={faChevronRight} /></button>
+                <button onClick={() => getProjects("next")} className="arrow-icon next-icon"><FontAwesomeIcon icon={faChevronRight} /></button>
             </div>
         </BlockContent>
     );
