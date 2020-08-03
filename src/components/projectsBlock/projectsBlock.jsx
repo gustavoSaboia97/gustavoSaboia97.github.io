@@ -6,11 +6,62 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
-import myself from '../../assets/img/myself.jpg';
+import projectsPt from '../../assets/jsons/projects-pt.json';
 
 
 library.add(faChevronRight, faChevronLeft);
 
+
+let position = 0;
+
+const getProjectPosition = (arrowDirection, projects) => {
+    let next = "next";
+    let back = "back";
+    let initial = "initial";
+
+    if (initial === arrowDirection){
+        position = 0;
+        return position;
+    }
+    if (next === arrowDirection){
+        if (position === (projects.length - 1)){
+            position = 0;
+        }
+        else {
+            position++;
+        }
+    }
+    if (back === arrowDirection){
+        if (position === 0){
+            position = projects.length - 1;
+        }
+        else {
+            position--;
+        }
+    }
+
+    return position;
+}
+
+const getProjects = (arrowDirection) => {
+
+    let projects = projectsPt;
+    let position = getProjectPosition(arrowDirection, projects);
+    let image = projects[position]['img'];
+
+    return (
+        <a href={projects[position]['link']}>
+            <div class="project">
+                <img class="project-img" src={image} alt={projects[position]['alt']} />
+                <p> 
+                    {projects[position]['description']}
+                </p>
+            </div>
+        </a>
+    );
+}
+
+let project = getProjects("initial");
 
 const ProjectsBlock = (props) => {
     return (
@@ -18,18 +69,13 @@ const ProjectsBlock = (props) => {
             <div class="title">Projects</div>
             
             <div class="projects-selector">
-                <div class="arrow-icon back-icon"><FontAwesomeIcon icon={faChevronLeft} /></div>
+                <button onClick={getProjects("back")} class="arrow-icon back-icon"><FontAwesomeIcon icon={faChevronLeft} /></button>
                 
-                <div class="project">
-                    <img class="project-img" src={myself} alt="Assine Globo" />
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 
-1500s, when an unknown printer took a galley of type and scrambled it to 
-make a type specimen book. It has survived not only five centuries, but also 
-the leap into electronic typesettingm.</p>
-                </div>
+                {
+                    project
+                }
                 
-                <div class="arrow-icon next-icon"><FontAwesomeIcon icon={faChevronRight} /></div>
+                <button onClick={getProjects("next")} class="arrow-icon next-icon"><FontAwesomeIcon icon={faChevronRight} /></button>
             </div>
         </BlockContent>
     );
